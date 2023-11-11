@@ -1,0 +1,47 @@
+[
+    {
+        "id_empresa": "001",
+        "nome": "Devs em Ação LTDA",
+        "CNPJ": "12.345.678/0001-11",
+        "data_cadastro": "2022-01-15",
+        "descricao": "Uma empresa inovadora no ramo de desenvolvimento de software, focada em soluções criativas e eficientes para diversos setores do mercado.",
+        "endereco": {
+            "rua": "Rua da Programação, 101",
+            "cidade": "São Paulo",
+            "estado": "SP",
+            "CEP": "01100-000"
+        },
+        "setor": "Tecnologia",
+        "website": "https://www.devsacao.com.br"
+    },
+    {
+        "id_empresa": "002",
+        "nome": "New Data Eireli",
+        "CNPJ": "23.456.789/0001-22",
+        "data_cadastro": "2022-05-20",
+        "descricao": "Especializada em análise de dados e inteligência de mercado, a New Data oferece soluções baseadas em Big Data para otimização de negócios.",
+        "endereco": {
+            "rua": "Avenida dos Dados, 202",
+            "cidade": "Rio de Janeiro",
+            "estado": "RJ",
+            "CEP": "22000-111"
+        },
+        "setor": "Tecnologia",
+        "website": "https://www.newdata.com.br"
+    },
+    {
+        "id_empresa": "003",
+        "nome": "Experience LTDA",
+        "CNPJ": "34.567.890/0001-33",
+        "data_cadastro": "2021-09-10",
+        "descricao": "Com foco em desenvolvimento de experiências digitais, a Experience LTDA é uma líder de mercado em soluções inovadoras e design de interação.",
+        "endereco": {
+            "rua": "Praça da Experiência, 303",
+            "cidade": "Belo Horizonte",
+            "estado": "MG",
+            "CEP": "30000-222"
+        },
+        "setor": "Tecnologia",
+        "website": "https://www.experience.com.br"
+    }
+]
