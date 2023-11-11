@@ -58,11 +58,6 @@ $(document).ready(function(){
     autoHideScrollbar: true
   });
 
-  $(".note-toggle").on("click", function(){
-    $(this).hide();
-    $(".note").slideToggle();
-  });
-
   $(".level-menu-toggle-wrapper").on("click",function(){
     if($(".menu-open").length == 0) {
       openMenu();
@@ -612,12 +607,6 @@ function loadLevel(){
 
   level = levels[currentLevel];
 
-  // Show the help link only for the first three levels
-  if(currentLevel < 3) {
-    $(".note-toggle").show();
-  } else {
-    $(".note-toggle").hide();
-  }
 
   $(".level-menu .current").removeClass("current");
   $(".level-menu div a").eq(currentLevel).addClass("current");

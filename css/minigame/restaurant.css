@@ -11,10 +11,7 @@ html,body {
 }
 
 body {
-  background: #2e2a23;
-  background-image: -webkit-radial-gradient(20% 40%,cover circle, #3e392f, #221e17);
-  background-image: -moz-radial-gradient(20% 40%,contain circle, #3e392f, #221e17);
-  background-repeat: no-repeat;
+  background: #eeeeee;
   position: relative;
 }
 
@@ -92,14 +89,14 @@ header {
   left: 0;
   margin: 0;
   opacity: .5;
-  transition: all opacity .1s ease-out;
+  /* transition: all opacity .1s ease-out; */
 }
 
 .logo:hover plate {
   opacity: .75;
   transform-origin: bottom;
-  animation: strobeStart .5s ease-out, strobe 1s infinite;
-  animation-delay: 0s, .5s;
+  /* animation: strobeStart .5s ease-out, strobe 1s infinite;
+  animation-delay: 0s, .5s; */
 
 }
 
@@ -128,9 +125,9 @@ header {
 
 .table-surface {
   box-shadow: 0px 40px 10px rgba(0,0,0,.2);
-  background: #dd992d;
-  background: -webkit-linear-gradient(#dd992d,#cd8c26);
-  background: linear-gradient(#dd992d,#cd8c26);
+  background: #b600ad;
+  background: -webkit-linear-gradient(#b600ad,#910089);
+  background: linear-gradient(#b600ad,#910089);
   position: absolute;
   height: 100%;
   bottom: 0;
@@ -140,7 +137,7 @@ header {
 .table plate {
   z-index: 99999;
 }
-
+/* 
 .table-edge  {
   width: 250px;
   margin: 0 auto 10px auto;
@@ -165,17 +162,17 @@ header {
 
 .table-leg:last-child {
   right: 20px;
-}
+} */
 
-orange, apple, pickle, bento, plate {
+/* orange, apple, pickle, bento, plate {
   transition: transform ease-out .2s;
-}
+} */
 
-.pop {
+/* .pop {
   animation: pop .2s;
-}
+} */
 
-@keyframes pop {
+/* @keyframes pop {
   0% {
     opacity: 0;
     transform: scale(.3);
@@ -188,23 +185,23 @@ orange, apple, pickle, bento, plate {
   100% {
     transform: scale(1);
   }
-}
+} */
 
 
 
 
 .clean {
-  animation: cleanme .2s 1;
+  /* animation: cleanme .2s 1; */
   transform: translateY(-600px);
 }
 
-@keyframes cleanme {
+/* @keyframes cleanme {
   0% {   transform: translateY(0px) rotate3d(0,0,0,0deg); }
   100% { transform: translateY(-600px) rotate3d(0,0,0,0deg);}
-}
+} */
 
 bento, plate {
-  box-shadow: 0px 8px 0px rgba(0,0,0,.1);
+  /* box-shadow: 0px 8px 0px rgba(0,0,0,.1); */
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -213,17 +210,17 @@ bento, plate {
 }
 
 plate {
-  border-bottom: solid 5px #DDD;
-  background: white;
+  /* border-bottom: solid 5px #DDD; */
+  background: rgb(124, 0, 0);
   -webkit-border-radius: 100px;
   border-radius: 100px;
 }
 
 bento {
   height: 100px;
-  background: brown;
+  background: rgb(224, 202, 0);
   position: relative;
-  border: solid 3px #711c12;
+  /* border: solid 3px #711c12; */
   border-width: 20px 2px;
 }
 
@@ -249,7 +246,7 @@ bento:before {
   width: calc(100%);
   top: 0;
   left:0;
-  border: solid 10px rgba(0,0,0,.1);
+  /* border: solid 10px rgba(0,0,0,.1); */
   border-width: 10px 0 0 0px;
 }
 
@@ -284,11 +281,11 @@ bento:before {
 .editor .input-header {
   text-align: left;
   padding: 10px 15px;
-  background: rgba(0,0,0,.15);
+  background: rgb(0, 0, 0);
   border-top: solid 1px rgba(255,255,255,.05);
   border-bottom: solid 1px rgba(255,255,255,.05);
   border-radius: 2px 2px 0 0;
-  color: rgba(255,255,255,.6);
+  color: rgb(255, 255, 255);
 }
 
 .markup {
@@ -304,8 +301,8 @@ bento:before {
 }
 
 .editor .css-view {
-  background: #efefef;
-  color: #AAA;
+  background: #dfdfdf;
+  color: #777777;
 
 }
 
@@ -326,8 +323,8 @@ bento:before {
 }
 
 .css-view .line-numbers {
-  color: #999;
-  background: #DDD;
+  color: #777777;
+  background: #dfdfdf;
 }
 
 .html-view .line-numbers {
@@ -336,7 +333,7 @@ bento:before {
 }
 
 .html-view .file-window {
-  background: rgba(0,0,0,.3);
+  background: rgb(46, 46, 46);
 }
 
 .editor input {
@@ -349,8 +346,8 @@ bento:before {
 
 .editor input.input-strobe {
   background: rgba(62,203,255,.3);
-  -webkit-animation: input .5s infinite;
-  -moz-animation: input .5s infinite;
+  /* -webkit-animation: input .5s infinite;
+  -moz-animation: input .5s infinite; */
 
 }
 
@@ -376,13 +373,13 @@ bento:before {
 }
 
 apple {
-  background: #e41919;
-  border-color: #ab1212;
+  background: #f5f5f5;
+  border-color: #f5f5f5;
 }
 
 orange {
-  background: orange;
-  border-color: #bd6e07;
+  background: rgb(0, 255, 255);
+  border-color: rgb(0, 255, 255);
 }
 
 orange,apple,pickle {
@@ -395,7 +392,7 @@ orange,apple,pickle {
 
 
 carrot {
-  background: orange;
+  background: rgb(0, 255, 13);
   width: 60px;
   height: 60px;
   display: inline-block;
@@ -431,12 +428,12 @@ apple.small {
 }
 
 pickle {
-  background: #179837;
+  background: #26008f;
   width: 25px;
   border-radius: 30px;
   display: inline-block;
   position: relative;
-  border: solid 2px #025a18;
+  /* border: solid 2px #025a18; */
   border-width: 2px 2px 9px 2px;
   margin: 20px 10px;
 }
@@ -510,7 +507,7 @@ bento > pickle.small:only-child {
   z-index: 99999;
 }
 
-.shake {
+/* .shake {
   animation: shake .1s 5;
 }
 
@@ -519,15 +516,15 @@ bento > pickle.small:only-child {
   25% {  transform: translateX(-5px); }
   50% {  transform: translateX(0); }
   75% {  transform: translateX(5px); }
-}
+} */
 
-.strobe {
+/* .strobe {
   transform-origin: bottom;
   animation: strobeStart .5s ease-out, strobe 1s infinite;
   animation-delay: 0s, .5s;
-}
+} */
 
-@keyframes strobeStart {
+/* @keyframes strobeStart {
   0% {
     transform:  skew(0deg,0deg) scaleY(1) ;
     animation-timing-function: ease-in;
@@ -545,7 +542,7 @@ bento > pickle.small:only-child {
   50% { transform:  skew(-4deg,0deg) scaleX(1); }
   60% { transform:  skew(-1deg,0deg) scaleY(.9) ; }
   100% {transform: skew(4deg,0deg) scaleX(1); }
-}
+} */
 
 
 .enter-button {
@@ -567,12 +564,12 @@ bento > pickle.small:only-child {
   z-index: 999999;
 }
 
-.enterhit {
+/* .enterhit {
   -webkit-animation: enterhit .1s 1;
   animation: enterhit .1s 1;
-}
+} */
 
-@-webkit-keyframes enterhit {
+/* @-webkit-keyframes enterhit {
   50% {
     border-width: 1px 1px 2px 1px;
     top: 12px;
@@ -582,7 +579,7 @@ bento > pickle.small:only-child {
   50% {
     border-width: 1px 1px 2px 1px;
     top: 12px;
-  }
+  } */
 }
 
 .plus {
@@ -605,7 +602,7 @@ apple[data-hovered="true"] {
   box-shadow: 0 0 0 6px rgba(228,25,25,.3);
 }
 */
-
+/* 
 .helper {
   position: absolute;
   background: white;
@@ -620,9 +617,9 @@ apple[data-hovered="true"] {
   outline: solid 1px transparent;
   word-wrap: nowrap;
   white-space: nowrap;
-}
+} */
 
-plate:before {
+/* plate:before {
   content: "";
   display: block;
   position: absolute;
@@ -634,19 +631,10 @@ plate:before {
   border-top: solid 6px #CCC;
   opacity: .4;
   background: rgba(255,255,255,1);
-}
+} */
 
-#fancy:after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 44px);
-  height: 68px;
-  width: 74px;
-  border-radius: 60px;
-  border: solid 10px #009ff2;
-  opacity: .4;
+#fancy {
+  background-color: #025a18;
 }
 
 orange {
@@ -1104,7 +1092,7 @@ plate orange:nth-last-child(4)
   transform: rotate(-45deg);
 }
 
-.note {
+/* .note {
   padding: 20px;
   width: 600px;
   color: #777;
@@ -1158,7 +1146,7 @@ plate orange:nth-last-child(4)
   font-size: 15px;
   margin: 0 0 5px 0;
   padding: 0;
-}
+} */
 
 /* Winner screen */
 
@@ -1221,11 +1209,11 @@ plate orange:nth-last-child(4)
   left: 2px;
 }
 
-.level-nav a.link-jiggle {
+/* .level-nav a.link-jiggle {
   animation: linkJiggle .2s ease-out;
-}
+} */
 
-@keyframes linkJiggle {
+/* @keyframes linkJiggle {
   0% {
     transform: scale(1);
   }
@@ -1237,7 +1225,7 @@ plate orange:nth-last-child(4)
     transform: scale(1.13);
   }
 
-}
+} */
 
 /* Tag treatment for the level helpers & examples */
 
@@ -1264,23 +1252,22 @@ tag:after {
 }
 
 .nametag {
-  font-family: "Satisfy", sans-serif;
+  font-family: "Poppins", sans-serif;
   position: absolute;
   bottom: -14px;
-  color: black;
   width: 80px;
-  color: #09699b;
+  color: #ffffff;
   font-size: 22px;
   box-shadow: -3px 4px 0 rgba(0,0,0,.1);
   background-image: url(../images/line.gif);
   z-index: 9999;
   padding: 30px 0 2px 0 ;
-  background-color: #c5d6dd;
-  transform: rotate(-4deg);
-  animation: slide .4s ease-out;
+  background-color: #5f2b00;
+  /* transform: rotate(-4deg); */
+  /* animation: slide .4s ease-out; */
 }
 
-@keyframes slide {
+/* @keyframes slide {
   0% {
     transform: translateY(-20px);
     animation-timing-function: ease-out;
@@ -1292,7 +1279,7 @@ tag:after {
   100% {
     transform: translateY(0px) rotate(-4deg);
   }
-}
+} */
 
 /*Overrides for the custom scrollbar plugin*/
 
