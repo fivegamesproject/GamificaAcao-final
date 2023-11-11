@@ -814,7 +814,7 @@ circulo_vermelho bola_ciano:nth-last-child(4)
   font-size: 25px;
   margin: 0;
   padding: 0 0 10px 0;
-  color: #777;
+  color: #ffffff;
 }
 
 .level-header.completed .checkmark {
@@ -952,8 +952,7 @@ circulo_vermelho bola_ciano:nth-last-child(4)
   bottom: 0;
   overflow-y: hidden;
   transition: all .15s ease-in-out;
-  background: rgba(0,0,0,1);
-  background: #1b1813;
+  background: #f8b767;
   padding: 0;
   width: 100%;
 }
@@ -965,7 +964,7 @@ circulo_vermelho bola_ciano:nth-last-child(4)
 .levels {
   
   display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px 50px 50px;
   gap:20px;
 }
 
@@ -985,7 +984,7 @@ circulo_vermelho bola_ciano:nth-last-child(4)
 .right-col .help-wrapper {
   padding: 20px;
   height: 100%;
-  background: rgba(0,0,0,.2);
+  background: #f8b767;
 }
 
 .level-menu .levels a {
@@ -999,7 +998,7 @@ circulo_vermelho bola_ciano:nth-last-child(4)
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  background-color: rgb(105, 105, 105);
+  background-color: #bb6700;
 }
 
 .level-menu .level-syntax {

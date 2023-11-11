@@ -218,12 +218,12 @@ function buildLevelmenu(){
       $(item).addClass("completed");
     }
 
-    $(item).on("click",function(){
-      finished = false;
-      currentLevel = $(this).index();
-      loadLevel();
-      closeMenu();
-    });
+    // $(item).on("click",function(){
+    //   finished = false;
+    //   currentLevel = $(this).index();
+    //   loadLevel();
+    //   closeMenu();
+    // });
   }
 }
 
