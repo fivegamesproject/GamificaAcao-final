@@ -53,9 +53,14 @@ $(document).ready(function(){
   });
 
   // Custom scrollbar plugin
-  $(".left-col, .level-menu").mCustomScrollbar({
-    scrollInertia: 0,
-    autoHideScrollbar: true
+  // $(".left-col, .level-menu").mCustomScrollbar({
+  //   scrollInertia: 0,
+  //   autoHideScrollbar: true
+  // });
+
+  $(".note-toggle").on("click", function(){
+    $(this).hide();
+    $(".note").slideToggle();
   });
 
   $(".level-menu-toggle-wrapper").on("click",function(){
@@ -121,7 +126,7 @@ $(document).ready(function(){
   });
 
   //Add tooltips
-  $(".table").on("mouseover","*",function(e){
+  $(".retangulo").on("mouseover","*",function(e){
     e.stopPropagation();
     showTooltip($(this));
   });
@@ -131,7 +136,7 @@ $(document).ready(function(){
     el = $(this);
     var markupElements = $(".markup *");
     var index = markupElements.index(el) -1;
-    showTooltip($(".table *").eq(index));
+    showTooltip($(".retangulo *").eq(index));
     e.stopPropagation();
   });
 
@@ -141,7 +146,7 @@ $(document).ready(function(){
     hideTooltip();
   });
 
-  $(".table").on("mouseout","*", function(e){
+  $(".retangulo").on("mouseout","*", function(e){
     hideTooltip();
     e.stopPropagation();
   });
@@ -206,7 +211,7 @@ function buildLevelmenu(){
   for(var i = 0; i < levels.length; i++){
     var level = levels[i];
     var item = document.createElement("a");
-    $(item).html("<span class='checkmark'></span><span class='level-number'>" + (i+1) + "</span>" + level.syntax);
+    $(item).html("<span></span><span class='level-number'>" + (i+1) + "</span>");
     $(".level-menu .levels").append(item);
 
     if(checkCompleted(i)){
@@ -246,7 +251,7 @@ function showTooltip(el){
   }
 
   el.attr("data-hovered",true);
-  var tableElements = $(".table *");
+  var tableElements = $(".retangulo *");
   var index = tableElements.index(el);
   var that = el;
   $(".markup > div *").eq(index).addClass("enhance").find("*").addClass("enhance");
@@ -345,13 +350,13 @@ function resetTable(){
   $(".clean,.strobe").removeClass("clean,strobe");
   $(".clean,.strobe").removeClass("clean,strobe");
   $("input").addClass("input-strobe");
-  $(".table *").each(function(){
+  $(".retangulo *").each(function(){
     $(this).width($(this).width());
     // $(this).removeAttr("style");
     // TODO - needed?? Probably not, everything gets removed anyway
   });
 
-  var tableWidth = $(".table").outerWidth();
+  var tableWidth = $(".retangulo").outerWidth();
   $(".table-wrapper, .table-edge").width(tableWidth);
 }
 
@@ -383,19 +388,19 @@ function fireRule(rule) {
   */
 
   // var baseTable = $('.table-wrapper > .table, .table-wrapper > .nametags, .table-wrapper > .table-surface');
-  var baseTable = $('.table');
+  var baseTable = $('.retangulo');
 
   // Check if jQuery will throw an error trying the mystery rule
   // If it errors out, change the rule to null so the wrong-guess animation will work
   try {
-    $(".table").find(rule).not(baseTable);
+    $(".retangulo").find(rule).not(baseTable);
   }
   catch(err) {
     rule = null;
   }
 
-  var ruleSelected = $(".table").find(rule).not(baseTable);            // What the correct rule finds
-  var levelSelected = $(".table").find(level.selector).not(baseTable); // What the person finds
+  var ruleSelected = $(".retangulo").find(rule).not(baseTable);            // What the correct rule finds
+  var levelSelected = $(".retangulo").find(level.selector).not(baseTable); // What the person finds
 
   var win = false;
 
@@ -508,17 +513,17 @@ function sendEvent(category, action, label){
 }
 
 function winGame(){
-  $(".table").html('<span class="winner"><strong>You did it!</strong><br>You rock at CSS.</span>');
+  $(".retangulo").html('<span class="winner"><strong>You did it!</strong><br>You rock at CSS.</span>');
   addNametags();
   finished = true;
   resetTable();
 }
 
 function checkResults(ruleSelected,levelSelected,rule){
-  var ruleTable = $(".table").clone();
+  var ruleTable = $(".retangulo").clone();
   ruleTable.find(".strobe").removeClass("strobe");
   ruleTable.find(rule).addClass("strobe");
-  return($(".table").html() == ruleTable.html());
+  return($(".retangulo").html() == ruleTable.html());
 }
 
 // Returns all formatted markup within an element...
@@ -568,12 +573,12 @@ function loadBoard(){
     }
   });
 
-  $(".table").html(level.boardMarkup);
+  $(".retangulo").html(level.boardMarkup);
   addNametags();
-  $(".table *").addClass("pop");
+  $(".retangulo *").addClass("pop");
 
 
-  $(".markup").html('<div>&ltdiv class="table"&gt' + markupHolder.html() + '&lt/div&gt</div>');
+  $(".markup").html('<div>&ltdiv class="retangulo"&gt' + markupHolder.html() + '&lt/div&gt</div>');
 }
 
 // Adds nametags to the items on the table
@@ -607,6 +612,12 @@ function loadLevel(){
 
   level = levels[currentLevel];
 
+  // Show the help link only for the first three levels
+  if(currentLevel < 3) {
+    $(".note-toggle").show();
+  } else {
+    $(".note-toggle").hide();
+  }
 
   $(".level-menu .current").removeClass("current");
   $(".level-menu div a").eq(currentLevel).addClass("current");
@@ -619,7 +630,7 @@ function loadLevel(){
   loadBoard();
   resetTable();
 
-  $(".level-header .level-text").html("Level " + (currentLevel+1) + " of " + levels.length);
+  $(".level-header .level-text").html("Pergunta " + (currentLevel+1) + " de " + levels.length);
 
   updateProgressUI(currentLevel, checkCompleted(currentLevel));
 
@@ -631,7 +642,7 @@ function loadLevel(){
 
   //Strobe what's supposed to be selected
   setTimeout(function(){
-    $(".table " + level.selector).addClass("strobe");
+    $(".retangulo " + level.selector).addClass("strobe");
     $(".pop").removeClass("pop");
   },200);
 

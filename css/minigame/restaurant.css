@@ -82,7 +82,7 @@ header {
   color: rgba(255,255,255,.4);
 }
 
-.logo plate {
+.logo circulo_vermelho {
   z-index: 500;
   position: absolute;
   top: 0;
@@ -92,7 +92,7 @@ header {
   /* transition: all opacity .1s ease-out; */
 }
 
-.logo:hover plate {
+.logo:hover circulo_vermelho {
   opacity: .75;
   transform-origin: bottom;
   /* animation: strobeStart .5s ease-out, strobe 1s infinite;
@@ -111,7 +111,7 @@ header {
   width: 250px;
 }
 
-.table {
+.retangulo {
   transform-style: preserve-3d;
   outline: solid 1px transparent;
   margin: 0px auto 0px auto;
@@ -134,7 +134,7 @@ header {
   width: 100%;
 }
 
-.table plate {
+.retangulo circulo_vermelho {
   z-index: 99999;
 }
 /* 
@@ -164,7 +164,7 @@ header {
   right: 20px;
 } */
 
-/* orange, apple, pickle, bento, plate {
+/* bola_ciano, bola_branco, cilindro_azul, quadrado_amarelo, circulo_vermelho {
   transition: transform ease-out .2s;
 } */
 
@@ -200,7 +200,7 @@ header {
   100% { transform: translateY(-600px) rotate3d(0,0,0,0deg);}
 } */
 
-bento, plate {
+quadrado_amarelo, circulo_vermelho {
   /* box-shadow: 0px 8px 0px rgba(0,0,0,.1); */
   display: inline-block;
   width: 100px;
@@ -209,14 +209,14 @@ bento, plate {
   position: relative;
 }
 
-plate {
+circulo_vermelho {
   /* border-bottom: solid 5px #DDD; */
   background: rgb(124, 0, 0);
   -webkit-border-radius: 100px;
   border-radius: 100px;
 }
 
-bento {
+quadrado_amarelo {
   height: 100px;
   background: rgb(224, 202, 0);
   position: relative;
@@ -226,7 +226,7 @@ bento {
 
 
 
-plate bento {
+circulo_vermelho quadrado_amarelo {
   height: 74px;
   width: 74px;
   position: absolute;
@@ -235,12 +235,12 @@ plate bento {
 
 }
 
-plate bento apple,
-plate bento orange {
+circulo_vermelho quadrado_amarelo bola_branco,
+circulo_vermelho quadrado_amarelo bola_ciano {
   top: -36px !important;
 }
 
-bento:before {
+quadrado_amarelo:before {
   content:"";
   position: absolute;
   width: calc(100%);
@@ -372,17 +372,17 @@ bento:before {
   font-size: 30px;
 }
 
-apple {
+bola_branco {
   background: #f5f5f5;
   border-color: #f5f5f5;
 }
 
-orange {
+bola_ciano {
   background: rgb(0, 255, 255);
   border-color: rgb(0, 255, 255);
 }
 
-orange,apple,pickle {
+bola_ciano,bola_branco,cilindro_azul {
   box-shadow: 0px 5px 0px rgba(0,0,0,.2);
   display: inline-block;
   margin: 0 10px;
@@ -408,7 +408,7 @@ carrot {
 }
 
 
-orange,apple {
+bola_ciano,bola_branco {
   -webkit-border-radius: 100px;
   border-radius: 100px;
   border-style: solid;
@@ -419,15 +419,15 @@ orange,apple {
   margin: 20px 10px;
 }
 
-orange.small,
-apple.small {
+bola_ciano.pequeno,
+bola_branco.pequeno {
   height: 30px;
   width: 30px;
   border-width: 2px 4px 8px 4px;
   margin: 30px 10px;
 }
 
-pickle {
+cilindro_azul {
   background: #26008f;
   width: 25px;
   border-radius: 30px;
@@ -438,14 +438,14 @@ pickle {
   margin: 20px 10px;
 }
 
-pickle.small {
+cilindro_azul.pequeno {
   height: 40px;
   width: 18px;
   border-width: 1px 2px 6px 2px;
   margin: 30px 10px;
 }
 
-orange:before,apple:before {
+bola_ciano:before,bola_branco:before {
   content: "";
   display: block;
   position: absolute;
@@ -459,40 +459,40 @@ orange:before,apple:before {
 
 /*FRUITS ON A PLATTER*/
 
-bento orange,
-bento apple,
-plate orange,
-plate apple
+quadrado_amarelo bola_ciano,
+quadrado_amarelo bola_branco,
+circulo_vermelho bola_ciano,
+circulo_vermelho bola_branco
  {
   left: calc(50% - 30px);
   margin: 0;
   position: absolute;
 }
 
-plate > apple:last-child,
-plate > orange:last-child,
-bento > apple:last-child,
-bento > orange:last-child
+circulo_vermelho > bola_branco:last-child,
+circulo_vermelho > bola_ciano:last-child,
+quadrado_amarelo > bola_branco:last-child,
+quadrado_amarelo > bola_ciano:last-child
 {
   top: calc(50% - 35px);
 }
 
-plate .small,
-bento .small {
+circulo_vermelho .pequeno,
+quadrado_amarelo .pequeno {
   left: calc(50% - 15px);
   margin-left:0;
   margin-right:0;
 }
 
-plate > .small:only-child,
-bento > .small:only-child {
+circulo_vermelho > .pequeno:only-child,
+quadrado_amarelo > .pequeno:only-child {
   position: absolute;
   top: calc(50% - 15px);
   margin:0;
 }
 
-plate > pickle:only-child,
-bento > pickle:only-child {
+circulo_vermelho > cilindro_azul:only-child,
+quadrado_amarelo > cilindro_azul:only-child {
   top: calc(50% - 40px);
   left: calc(50% - 10px);
   z-index: 99999;
@@ -500,8 +500,8 @@ bento > pickle:only-child {
   position: absolute;
 }
 
-plate > pickle.small:only-child,
-bento > pickle.small:only-child {
+circulo_vermelho > cilindro_azul.pequeno:only-child,
+quadrado_amarelo > cilindro_azul.pequeno:only-child {
   top: calc(50% - 22px);
   left: calc(50% - 8px);
   z-index: 99999;
@@ -580,7 +580,7 @@ bento > pickle.small:only-child {
     border-width: 1px 1px 2px 1px;
     top: 12px;
   } */
-}
+/* } */
 
 .plus {
   color: #666;
@@ -593,12 +593,12 @@ bento > pickle.small:only-child {
   box-shadow: 0 0 0 6px rgba(255,255,255,.4);
 }
 
-plate [data-hovered] {
+circulo_vermelho [data-hovered] {
   box-shadow: 0 0 0 6px rgba(0,0,0,.3);
 }
 
 /*
-apple[data-hovered="true"] {
+bola_branco[data-hovered="true"] {
   box-shadow: 0 0 0 6px rgba(228,25,25,.3);
 }
 */
@@ -619,7 +619,7 @@ apple[data-hovered="true"] {
   white-space: nowrap;
 } */
 
-/* plate:before {
+/* circulo_vermelho:before {
   content: "";
   display: block;
   position: absolute;
@@ -633,11 +633,11 @@ apple[data-hovered="true"] {
   background: rgba(255,255,255,1);
 } */
 
-#fancy {
+#elegante {
   background-color: #025a18;
 }
 
-orange {
+bola_ciano {
   z-index: 1000;
 }
 
@@ -747,33 +747,33 @@ board {
   display: none;
 }
 
-/* Fancy orange stacking */
+/* elegante bola_ciano stacking */
 
-plate apple,
-plate orange {
+circulo_vermelho bola_branco,
+circulo_vermelho bola_ciano {
   position: absolute;
 }
 
-plate apple:last-child,
-plate orange:last-child {
+circulo_vermelho bola_branco:last-child,
+circulo_vermelho bola_ciano:last-child {
   z-index: 300;
 }
 
-plate apple:nth-last-child(2),
-plate orange:nth-last-child(2) {
+circulo_vermelho bola_branco:nth-last-child(2),
+circulo_vermelho bola_ciano:nth-last-child(2) {
   top: -25px;
   z-index: 400;
 }
 
-plate apple:nth-last-child(3),
-plate orange:nth-last-child(3)
+circulo_vermelho bola_branco:nth-last-child(3),
+circulo_vermelho bola_ciano:nth-last-child(3)
 {
   top: -65px;
   z-index: 500;
 }
 
-plate apple:nth-last-child(4),
-plate orange:nth-last-child(4)
+circulo_vermelho bola_branco:nth-last-child(4),
+circulo_vermelho bola_ciano:nth-last-child(4)
 {
   top: -105px;
   z-index: 600;
@@ -862,7 +862,7 @@ plate orange:nth-last-child(4)
 }
 
 .order {
-  color: rgba(255,255,255,.3);
+  color: rgb(0, 0, 0);
   font-size: 45px;
   margin: 0;
   font-weight: 400;
@@ -947,14 +947,13 @@ plate orange:nth-last-child(4)
 }
 
 .level-menu {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: 10px;
   bottom: 0;
   overflow-y: hidden;
   transition: all .15s ease-in-out;
   background: rgba(0,0,0,1);
   background: #1b1813;
-  left: 500px;
   padding: 0;
   width: 100%;
 }
@@ -964,7 +963,10 @@ plate orange:nth-last-child(4)
 }
 
 .levels {
-  padding-bottom: 150px;
+  
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  gap:20px;
 }
 
 .level-menu h2 {
@@ -987,10 +989,17 @@ plate orange:nth-last-child(4)
 }
 
 .level-menu .levels a {
-  display: block;
+  display: flex;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
-  padding: 5px 12px 5px 22px;
-  color: #777;
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: rgb(105, 105, 105);
 }
 
 .level-menu .level-syntax {
@@ -998,10 +1007,11 @@ plate orange:nth-last-child(4)
   display: inline-block;
 }
 
-.level-menu .levels a.completed .checkmark {
-  opacity: .55;
-  border: solid 3px #4cbb4a;
-  border-width: 0 3px 3px 0;
+.level-menu .levels a.completed {
+  background-color: #4cbb4a;
+  border: 1px solid #277226;
+  border-width: 0 2px 2px 0;
+  color: white;
 }
 
 .level-menu .levels a .checkmark {
@@ -1020,16 +1030,13 @@ plate orange:nth-last-child(4)
 
 .level-menu .levels a.current {
   font-weight: bold;
-  color: #AAA;
-  background: rgba(255,255,255,.07);
+  color: #ffffff;
+  background: rgb(0, 154, 243);
 }
 
-.level-menu .levels a:hover {
-  background: rgba(255,255,255,.05);
-}
 
 .level-menu .level-number {
-  opacity: .6;
+  opacity: .9;
   min-width: 24px;
   display: inline-block;
 }
@@ -1180,7 +1187,7 @@ plate orange:nth-last-child(4)
   width: 30px;
   display: inline-block;
   opacity: .25;
-  transition: opacity .2s .ease-out;
+  /* transition: opacity .2s .ease-out; */
 }
 
 .level-nav a:hover {
