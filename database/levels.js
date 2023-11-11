@@ -17,7 +17,7 @@ var levels = [
   },
   {
     doThis : "Selecione as caixas de quadrado amarelo",
-    selector : "quadrado amarelo",
+    selector : "quadrado_amarelo",
     syntax : "A",
     helpTitle : "Selecione elementos pelo seu tipo",
     selectorName : "Seletor de Tipo",
@@ -53,7 +53,7 @@ var levels = [
     helpTitle: "Selecione um elemento dentro de outro elemento",
     selectorName : "Seletor de Descendente",
     doThis : "Selecione a bolas branca no circulo vermelho",
-    selector : "circulo vermelho de bolas branca",
+    selector : "circulo_vermelho bola_branca",
     syntax: "A&nbsp;&nbsp;B",
     help : "Seleciona todos os <strong>B</strong> dentro de <strong>A</strong>. <strong>B</strong> é chamado de descendente porque está dentro de outro elemento.",
     examples : [
@@ -63,9 +63,9 @@ var levels = [
     boardMarkup : `
     <quadrado_amarelo/>
     <circulo_vermelho>
-      <bola_branco/>
+      <bola_branca/>
     </circulo_vermelho>
-    <bola_branco/>
+    <bola_branca/>
     `
   },
   {
@@ -100,10 +100,10 @@ var levels = [
     '<strong>.neato</strong> selecione todos os elementos com <strong>class="neato"</strong>'
     ],
     boardMarkup : `
-    <bola_branco/>
-    <bola_branco class="pequeno"/>
+    <bola_branca/>
+    <bola_branca class="pequeno"/>
     <circulo_vermelho>
-      <bola_branco class="pequeno"/>
+      <bola_branca class="pequeno"/>
     </circulo_vermelho>
     <circulo_vermelho/>
     `
@@ -119,8 +119,8 @@ var levels = [
       '<strong>#big.wide</strong> selecione todos os elementes <strong>id="big"</strong> que também têm <strong>class="wide"</strong>'
     ],
     boardMarkup :`
-    <bola_branco/>
-    <bola_branco class="pequeno"/>
+    <bola_branca/>
+    <bola_branca class="pequeno"/>
     <quadrado_amarelo>
       <bola_ciano class="pequeno"/>
     </quadrado_amarelo>
@@ -133,7 +133,7 @@ var levels = [
   },
   {
     doThis : "Selecione as pequenas bolas ciana nos quadrados amarelo ",
-    selector : "bento bola_ciano.pequeno",
+    selector : "quadrado_amarelo bola_ciano.pequeno",
     syntax: "Dê o seu melhor!",
     helpTitle: "Você consegue...",
     help : 'Combine o que você aprendeu nos últimos níveis para resolver este!',
@@ -146,7 +146,7 @@ var levels = [
       <bola_ciano class="pequeno"/>
     </quadrado_amarelo>
     <quadrado_amarelo>
-      <bola_branco class="pequeno"/>
+      <bola_branca class="pequeno"/>
     </quadrado_amarelo>
     <quadrado_amarelo>
       <bola_ciano class="pequeno"/>
@@ -155,7 +155,7 @@ var levels = [
   },
   {
     doThis : "Selecione todos os circulos vermelho e quadrados amarelo",
-    selector : "circulo_vermelho,quadrado amarelo",
+    selector : "circulo_vermelho,quadrado_amarelo",
     selectorName : "Combinador de Vírgula",
     helpTitle: "Combine, seletores, com... vírgulas!",
     syntax : "A, B",
@@ -191,7 +191,7 @@ var levels = [
       '<strong>p *</strong> seleciona qualquer elemento dentro de todos <tag>p</tag> os elementos.',
     ],
     boardMarkup : `
-    <bola_branco/>
+    <bola_branca/>
     <circulo_vermelho>
       <bola_ciano class="pequeno" />
     </circulo_vermelho>
@@ -219,14 +219,14 @@ var levels = [
     <circulo_vermelho>
       <cilindro_azul/>
     </circulo_vermelho>
-    <bola_branco class="pequeno"/>
+    <bola_branca class="pequeno"/>
     <circulo_vermelho>
-      <bola_branco/>
+      <bola_branca/>
     </circulo_vermelho>`
   },
   {
     doThis : "Selecione toda bolas branca que está ao lado de um circulo vermelho",
-    selector : "circulo_vermelho + bola_branco",
+    selector : "circulo_vermelho + bola_branca",
     helpTitle: "Selecione um elemento que segue diretamente outro elemento",
     selectorName: "Seletor de Irmão Adjacente",
     syntax : "A + B",
@@ -237,14 +237,14 @@ var levels = [
     ],
     boardMarkup : `
     <quadrado_amarelo>
-      <bola_branco class="pequeno"/>
+      <bola_branca class="pequeno"/>
     </quadrado_amarelo>
     <circulo_vermelho />
-    <bola_branco class="pequeno"/>
+    <bola_branca class="pequeno"/>
     <circulo_vermelho />
-    <bola_branco/>
-    <bola_branco class="pequeno"/>
-    <bola_branco class="pequeno"/>
+    <bola_branca/>
+    <bola_branca class="pequeno"/>
+    <bola_branca class="pequeno"/>
     `
   },
   {
@@ -252,7 +252,7 @@ var levels = [
     helpTitle: "Selecione elementos que seguem outro elemento",
     syntax: "A ~ B",
     doThis : "Selecione os cilindro azul  ao lado do quadrado amarelo",
-    selector : "bento ~ cilindro_azul",
+    selector : "quadrado_amarelo ~ cilindro_azul",
     help : "Você pode selecionar todos os irmãos de um elemento que o seguem. Isso é como o Seletor Adjacente (A + B), exceto que ele seleciona todos os elementos seguintes ao invés de apenas um.",
     examples : [
       '<strong>A ~ B</strong> selecione todos <strong>B</strong> que seguem um(a) <strong>A</strong>'
@@ -276,7 +276,7 @@ var levels = [
     selectorName: "Seletor de Filho",
     syntax: "A > B&nbsp;",
     doThis : "Selecione a bolas branca diretamente em um circulo vermelho",
-    selector : "circulo vermelho > bolas branca",
+    selector : "circulo_vermelho > bola_branca",
     helpTitle: "Selecione os filhos diretos de um elemento",
     help : "Você pode selecionar elementos que são filhos diretos de outros elementos. Um elemento filho é qualquer elemento que está aninhado diretamente em outro elemento. <br><br>Elementos que estão aninhados mais profundamente são chamados de elementos descendentes.",
     examples : [
@@ -285,22 +285,22 @@ var levels = [
     boardMarkup: `
     <circulo_vermelho>
       <quadrado_amarelo>
-        <bola_branco/>
+        <bola_branca/>
       </quadrado_amarelo>
     </circulo_vermelho>
     <circulo_vermelho>
-      <bola_branco/>
+      <bola_branca/>
     </circulo_vermelho>
     <circulo_vermelho/>
-    <bola_branco/>
-    <bola_branco class="pequeno"/>
+    <bola_branca/>
+    <bola_branca class="pequeno"/>
     `
   },
   {
     selectorName: "Seletor Pseudo de Primeiro Filho",
     helpTitle: "Selecione um primeiro elemento filho dentro de outro elemento",
     doThis : "Selecione a bola ciana do topo",
-    selector : "circulo vermelho :first-child",
+    selector : "circulo_vermelho :first-child",
     syntax: ":first-child",
 
     help : "Você pode selecionar o primeiro elemento filho. Um elemento filho é qualquer elemento que está diretamente aninhado em outro elemento. Você pode combinar este pseudo-seletor com outros seletores.",
@@ -324,7 +324,7 @@ var levels = [
     selectorName: "Seletor Pseudo de Filho Único",
     helpTitle: "Selecione um elemento que seja o único elemento dentro de outro.",
     doThis : "Selecione a bolas branca e o cilindro azul  nos circulos vermelho",
-    selector : "circulo vermelho :only-child",
+    selector : "circulo_vermelho :only-child",
     syntax: ":only-child",
     help : "Você pode selecionar qualquer elemento que seja o único elemento dentro de outro.",
     examples : [
@@ -333,7 +333,7 @@ var levels = [
     ],
     boardMarkup : `
     <circulo_vermelho>
-      <bola_branco/>
+      <bola_branca/>
     </circulo_vermelho>
     <circulo_vermelho>
       <cilindro_azul />
@@ -362,7 +362,7 @@ var levels = [
     ],
     boardMarkup : `
     <circulo_vermelho id="elegante">
-      <bola_branco class="pequeno"/>
+      <bola_branca class="pequeno"/>
     </circulo_vermelho>
     <circulo_vermelho/>
     <circulo_vermelho>
@@ -393,7 +393,7 @@ var levels = [
     selectorName: "Seletor de Último Filho N-ésimo",
     helpTitle: "Selecione um elemento pela sua ordem em outro elemento, contando de trás para frente.",
     doThis : "Selecione o 1º quadrado amarelo",
-    selector : "bento:nth-last-child(3)",
+    selector : "quadrado_amarelo:nth-last-child(3)",
     syntax: ":nth-last-child(A)",
     help : "Seleciona os filhos a partir do fundo do elemento pai. Isto é como nth-child, mas contando de trás para a frente!",
     examples : [
@@ -414,7 +414,7 @@ var levels = [
     selectorName: "Seletor do Primeiro do Tipo",
     helpTitle: "Selecione o primeiro elemento de um tipo específico",
     doThis : "Selecione a 1º bola branca",
-    selector : "bola_branco:first-of-type",
+    selector : "bola_branca:first-of-type",
     syntax: ":first-of-type",
     help : "Seleciona o primeiro elemento desse tipo dentro de outro elemento.",
     examples : [
@@ -422,10 +422,10 @@ var levels = [
     ],
     boardMarkup: `
     <bola_ciano class="pequeno"/>
-    <bola_branco/>
-    <bola_branco class="pequeno"/>
-    <bola_branco/>
-    <bola_branco class="pequeno"/>
+    <bola_branca/>
+    <bola_branca class="pequeno"/>
+    <bola_branca/>
+    <bola_branca class="pequeno"/>
     <circulo_vermelho>
       <bola_ciano class="pequeno"/>
       <bola_ciano/>
@@ -466,11 +466,11 @@ var levels = [
       <cilindro_azul class="pequeno" />
     </circulo_vermelho>
     <circulo_vermelho>
-      <bola_branco class="pequeno" />
+      <bola_branca class="pequeno" />
     </circulo_vermelho>
     <circulo_vermelho/>
     <circulo_vermelho>
-      <bola_branco />
+      <bola_branca />
     </circulo_vermelho>
     <circulo_vermelho/>
     `
@@ -478,7 +478,7 @@ var levels = [
   {
     selectorName: "Seletor Apenas do Tipo",
     helpTitle: "Selecione elementos que são os únicos do seu tipo dentro do elemento pai",
-    selector : "bola_branco:only-of-type",
+    selector : "bola_branca:only-of-type",
     syntax: ":only-of-type",
     doThis : "Selecione a bolas branca no circulo vermelho do meio",
     help : "Seleciona o único elemento do seu tipo dentro de outro elemento.",
@@ -487,11 +487,11 @@ var levels = [
     ],
     boardMarkup: `
     <circulo_vermelho id="elegante">
-      <bola_branco class="pequeno" />
-      <bola_branco />
+      <bola_branca class="pequeno" />
+      <bola_branca />
     </circulo_vermelho>
     <circulo_vermelho>
-      <bola_branco class="pequeno" />
+      <bola_branca class="pequeno" />
     </circulo_vermelho>
     <circulo_vermelho>
       <cilindro_azul />
@@ -514,15 +514,15 @@ var levels = [
     <bola_ciano class="pequeno" />
     <cilindro_azul />
     <cilindro_azul />
-    <bola_branco class="pequeno" />
-    <bola_branco class="pequeno" />
+    <bola_branca class="pequeno" />
+    <bola_branca class="pequeno" />
     `
   },
   {
     selectorName: "Seletor Vazio",
     helpTitle: "Selecione elementos que não têm filhos",
     doThis : "Selecione os quadrados amarelo vazios",
-    selector : "bento:empty",
+    selector : "quadrado_amarelo:empty",
     syntax: ":empty",
     help : "Seleciona elementos que não têm outros elementos dentro deles.",
     examples : [
@@ -540,7 +540,7 @@ var levels = [
     selectorName: "Classe de pseudo-negação",
     helpTitle: "Seleciona todos os elementos que não correspondem ao seletor de negação.",
     doThis : "Selecione as bolas branca grandes",
-    selector : "bola_branco:not(.pequeno)",
+    selector : "bola_branca:not(.pequeno)",
     syntax: ":not(X)",
     help : 'Você pode usar isso para selecionar todos os elementos que não correspondem ao seletor <strong>"X"</strong>.',
     examples : [
@@ -550,12 +550,12 @@ var levels = [
     ],
     boardMarkup: `
     <circulo_vermelho id="elegante">
-      <bola_branco class="pequeno" />
+      <bola_branca class="pequeno" />
     </circulo_vermelho>
     <circulo_vermelho>
-      <bola_branco />
+      <bola_branca />
     </circulo_vermelho>
-    <bola_branco />
+    <bola_branca />
     <circulo_vermelho>
       <bola_ciano class="pequeno" />
     </circulo_vermelho>
@@ -574,8 +574,8 @@ var levels = [
       '<strong>[type]</strong> seleciona todos os elementos que têm um <strong>type="anything"</strong>. atributo'
     ],
     boardMarkup:`
-    <quadrado_amarelo><bola_branco class="pequeno"/></quadrado_amarelo>
-    <bola_branco for="Leonardo"/>
+    <quadrado_amarelo><bola_branca class="pequeno"/></quadrado_amarelo>
+    <bola_branca for="Leonardo"/>
     <circulo_vermelho for="Leandro"><cilindro_azul/></circulo_vermelho>
     <quadrado_amarelo for="Diego"><bola_ciano/></quadrado_amarelo>
     <cilindro_azul/>`
@@ -594,7 +594,7 @@ var levels = [
     ],
     boardMarkup:`
     <circulo_vermelho for="Leonardo"><cilindro_azul/></circulo_vermelho>
-    <circulo_vermelho for="Leandro"><bola_branco/></circulo_vermelho>
+    <circulo_vermelho for="Leandro"><bola_branca/></circulo_vermelho>
     <circulo_vermelho/>
     <quadrado_amarelo for="Diego"><bola_ciano/></quadrado_amarelo>
     `
@@ -610,8 +610,8 @@ var levels = [
       '<strong>input[type="checkbox"]</strong> selects all checkbox input elements.'
     ],
     boardMarkup:`
-    <bola_branco for="Leandro" />
-    <quadrado_amarelo for="Diego"><bola_branco /></quadrado_amarelo>
+    <bola_branca for="Leandro" />
+    <quadrado_amarelo for="Diego"><bola_branca /></quadrado_amarelo>
     <quadrado_amarelo for="Leonardo"><bola_ciano/></quadrado_amarelo>
     <cilindro_azul/>
     `
@@ -628,7 +628,7 @@ var levels = [
     ],
     boardMarkup: `
     <circulo_vermelho for="Leonardo"><cilindro_azul/></circulo_vermelho>
-    <quadrado_amarelo for="Leandro"><bola_branco class="pequeno"/></quadrado_amarelo>
+    <quadrado_amarelo for="Leandro"><bola_branca class="pequeno"/></quadrado_amarelo>
     <quadrado_amarelo for="Diego"><bola_ciano/></quadrado_amarelo>
     `
   },
@@ -643,9 +643,9 @@ var levels = [
       '<strong>img[src$=".jpg"]</strong> seleciona todas as imagens que exibem uma <strong>.jpg</strong> imagem.',
     ],
     boardMarkup:`
-    <bola_branco class="pequeno"/>
+    <bola_branca class="pequeno"/>
     <quadrado_amarelo for="Hayato"><cilindro_azul/></quadrado_amarelo>
-    <bola_branco for="Ryota"></bola_branco>
+    <bola_branca for="Ryota"></bola_branca>
     <circulo_vermelho for="Minato"><bola_ciano/></circulo_vermelho>
     <cilindro_azul class="pequeno"/>
     `
@@ -662,7 +662,7 @@ var levels = [
       '<strong>[class*="heading"]</strong> seleciona todos os elementos com "heading" em sua classe, como <strong>class="main-heading"</strong> e <strong>class="sub-heading"</strong>'
     ],
     boardMarkup:`
-    <quadrado_amarelo for="Robbie"><bola_branco /></quadrado_amarelo>
+    <quadrado_amarelo for="Robbie"><bola_branca /></quadrado_amarelo>
     <quadrado_amarelo for="Timmy"><cilindro_azul /></quadrado_amarelo>
     <quadrado_amarelo for="Bobby"><bola_ciano /></quadrado_amarelo>
     `

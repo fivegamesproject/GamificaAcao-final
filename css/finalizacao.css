@@ -1,0 +1,34 @@
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Acima do fundo do modal, mas abaixo da mensagem de parabéns */
+}
+
+#modal-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(237, 237, 237, 0.6);
+    z-index: 1; /* Abaixo do canvas e da mensagem de parabéns */
+    display: none;
+}
+
+#congrats-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ea8b17;
+    border-radius: 5px;
+    background-color: #ffe8cc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 3; /* O mais alto, acima do canvas e do fundo do modal */
+    display: none;
+}
