@@ -1,0 +1,54 @@
+[
+  {
+    "id_vaga": 1,
+    "nome": "Desenvolvedor front-end",
+    "empresa": "Devs em Acao LTDA",
+    "salario": 1200.30,
+    "competencias": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React"
+    ],
+    "descricao": "Responsável pelo desenvolvimento da interface de usuário, garantindo uma experiência agradável e eficiente para o usuário final."
+  },
+  {
+    "id_vaga": 2,
+    "nome": "Desenvolvedor back-end",
+    "empresa": "Devs em Acao LTDA",
+    "salario": 2400.20,
+    "competencias": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "API REST"
+    ],
+    "descricao": "Focado no desenvolvimento do servidor, bancos de dados e aplicação de lógicas de negócio, garantindo o desempenho e a segurança dos dados."
+  },
+  {
+    "id_vaga": 3,
+    "nome": "Analista de Banco de Dados",
+    "empresa": "New Data Eireli",
+    "salario": 5000.34,
+    "competencias": [
+      "SQL",
+      "NoSQL",
+      "Modelagem de dados",
+      "Otimização de consultas"
+    ],
+    "descricao": "Especialista em gerenciamento de dados, responsável pela organização, armazenamento e acessibilidade dos dados empresariais."
+  },
+  {
+    "id_vaga": 4,
+    "nome": "UX Designer",
+    "empresa": "Experience LTDA",
+    "salario": 8000.99,
+    "competencias": [
+      "Design de interação",
+      "Pesquisa de usuário",
+      "Prototipagem",
+      "Ferramentas de design (ex.: Sketch, Figma)"
+    ],
+    "descricao": "Profissional criativo focado em projetar experiências de usuário atraentes e intuitivas, melhorando a interação com o produto."
+  }
+]

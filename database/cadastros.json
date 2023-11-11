@@ -1,0 +1,56 @@
+[
+   {
+      "id_user": "12345",
+      "login": {
+         "email": "admin@gmail.com",
+         "senha": "admin",
+         "username": "admin"
+      },
+      "cadastro": {
+         "nome": "Leandro Kazu Xavier Kodama",
+         "data_nascimento": "2002-05-23",
+         "sexo": "M",
+         "CPF": "70707070707",
+         "estado": "SP",
+         "cidade": "São Paulo",
+         "nivel": 1,
+         "experiencia": 30
+      }
+   },
+   {
+      "id_user": "12346",
+      "login": {
+         "email": "usuario1@example.com",
+         "senha": "senha123",
+         "username": "usuario1"
+      },
+      "cadastro": {
+         "nome": "Ana Clara Silva",
+         "data_nascimento": "1990-04-12",
+         "sexo": "F",
+         "CPF": "80808080808",
+         "estado": "RJ",
+         "cidade": "Rio de Janeiro",
+         "nivel": 2,
+         "experiencia": 60
+      }
+   },
+   {
+      "id_user": "12347",
+      "login": {
+         "email": "usuario2@example.com",
+         "senha": "senha321",
+         "username": "usuario2"
+      },
+      "cadastro": {
+         "nome": "Carlos Eduardo Pereira",
+         "data_nascimento": "1985-08-15",
+         "sexo": "M",
+         "CPF": "90909090909",
+         "estado": "MG",
+         "cidade": "Belo Horizonte",
+         "nivel": 4,
+         "experiencia": 120
+      }
+   }
+]

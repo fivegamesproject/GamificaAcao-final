@@ -1,0 +1,195 @@
+[
+    {
+        "materia": "Matemática",
+        "dificuldade": "Médio",
+        "assunto": "Lógica",
+        "enunciado": "Se todos os veículos são azuis e algum azul é um carro, então algum veículo é um carro?",
+        "alternativas": [
+            "Sim",
+            "Não"
+        ],
+        "alternativa_correta": "Sim"
+    },
+    {
+        "materia": "Matemática",
+        "dificuldade": "Difícil",
+        "assunto": "Estatística",
+        "enunciado": "Qual é a média de uma série de números onde a soma é 150 e há 6 números na série?",
+        "alternativas": [
+            "25",
+            "30",
+            "24",
+            "28"
+        ],
+        "alternativa_correta": "25"
+    },
+    {
+        "materia": "Matemática",
+        "dificuldade": "Fácil",
+        "assunto": "Aritmética",
+        "enunciado": "Qual é o produto de 6 por 7?",
+        "alternativas": [
+            "42",
+            "48",
+            "36",
+            "54"
+        ],
+        "alternativa_correta": "42"
+    },
+    {
+        "materia": "Matemática",
+        "dificuldade": "Médio",
+        "assunto": "Álgebra",
+        "enunciado": "Se x + 2 = 5, qual é o valor de x?",
+        "alternativas": [
+            "2",
+            "3",
+            "7",
+            "5"
+        ],
+        "alternativa_correta": "3"
+    },
+    {
+        "materia": "Matemática",
+        "dificuldade": "Difícil",
+        "assunto": "Geometria",
+        "enunciado": "Qual é a área de um círculo com raio de 4cm? (Use π = 3,14)",
+        "alternativas": [
+            "50,24 cm²",
+            "12,56 cm²",
+            "25,12 cm²",
+            "16 cm²"
+        ],
+        "alternativa_correta": "50,24 cm²"
+    },
+    {
+        "materia": "Português",
+        "dificuldade": "Fácil",
+        "assunto": "Gramática",
+        "enunciado": "Qual palavra está escrita incorretamente?",
+        "alternativas": [
+            "Excessão",
+            "Exceção",
+            "Ascenção",
+            "Descenso"
+        ],
+        "alternativa_correta": "Excessão"
+    },
+    {
+        "materia": "Português",
+        "dificuldade": "Médio",
+        "assunto": "Interpretação de Texto",
+        "enunciado": "Em um texto sobre economia, a palavra 'inflação' sugere:",
+        "alternativas": [
+            "Crescimento econômico",
+            "Decréscimo nos preços",
+            "Aumento generalizado dos preços",
+            "Estabilidade financeira"
+        ],
+        "alternativa_correta": "Aumento generalizado dos preços"
+    },
+    {
+        "materia": "Português",
+        "dificuldade": "Difícil",
+        "assunto": "Figuras de Linguagem",
+        "enunciado": "Qual figura de linguagem está presente em 'O céu chora suas mágoas'?",
+        "alternativas": [
+            "Metáfora",
+            "Prosopopeia",
+            "Onomatopeia",
+            "Hipérbole"
+        ],
+        "alternativa_correta": "Prosopopeia"
+    },
+    {
+        "materia": "Português",
+        "dificuldade": "Médio",
+        "assunto": "Ortografia",
+        "enunciado": "Qual é a forma correta de pluralizar a palavra 'mal'?",
+        "alternativas": [
+            "Maus",
+            "Mals",
+            "Mais",
+            "Males"
+        ],
+        "alternativa_correta": "Males"
+    },
+    {
+        "materia": "Português",
+        "dificuldade": "Fácil",
+        "assunto": "Sinônimos",
+        "enunciado": "Qual é o sinônimo de 'rápido'?",
+        "alternativas": [
+            "Lento",
+            "Veloz",
+            "Devagar",
+            "Moroso"
+        ],
+        "alternativa_correta": "Veloz"
+    },
+    {
+        "materia": "Inglês",
+        "dificuldade": "Fácil",
+        "assunto": "Vocabulário",
+        "enunciado": "O que significa 'apple' em português?",
+        "alternativas": [
+            "Banana",
+            "Maçã",
+            "Pera",
+            "Uva"
+        ],
+        "alternativa_correta": "Maçã"
+    },
+    {
+        "materia": "Inglês",
+        "dificuldade": "Médio",
+        "assunto": "Gramática",
+        "enunciado": "Qual é o passado de 'go'?",
+        "alternativas": [
+            "Gone",
+            "Went",
+            "Goed",
+            "Goes"
+        ],
+        "alternativa_correta": "Went"
+    },
+    {
+        "materia": "Inglês",
+        "dificuldade": "Difícil",
+        "assunto": "Compreensão de Texto",
+        "enunciado": "Se 'John can play the guitar', o que John é capaz de fazer?",
+        "alternativas": [
+            "Cantar",
+            "Dançar",
+            "Tocar guitarra",
+            "Jogar futebol"
+        ],
+        "alternativa_correta": "Tocar guitarra"
+    },
+    {
+        "materia": "Inglês",
+        "dificuldade": "Médio",
+        "assunto": "Phrasal Verbs",
+        "enunciado": "O que significa 'look up to'?",
+        "alternativas": [
+            "Admirar",
+            "Procurar",
+            "Subir",
+            "Olhar para cima"
+        ],
+        "alternativa_correta": "Admirar"
+    },
+    {
+        "materia": "Inglês",
+        "dificuldade": "Fácil",
+        "assunto": "Conversação",
+        "enunciado": "Como se diz 'obrigado' em inglês?",
+        "alternativas": [
+            "Hello",
+            "Please",
+            "Thank you",
+            "Goodbye"
+        ],
+        "alternativa_correta": "Thank you"
+    }
+]
