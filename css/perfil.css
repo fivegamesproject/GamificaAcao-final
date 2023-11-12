@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ededed;
+    margin: 0;
+    padding-top: 60px; /* Espaço para o cabeçalho */
+}
+
+.header {
+    background-color: #ea8b17;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.perfil-title {
+    width: 100%; /* Ocupa a largura total */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Adiciona margem acima e abaixo */
+    font-size: 24px; /* Tamanho da fonte */
+    color: #ea8b17; /* Cor do texto */
+    font-weight: bold; /* Torna o texto em negrito */
+    padding: 10px 0; /* Adiciona um pouco de padding */
+    background-color: #f4f4f4; /* Cor de fundo para destacar */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+
+
+.perfil-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #00000030;
+    width: 80%;
+    max-width: 1200px; /* Largura máxima */
+    margin: auto; /* Centraliza o container */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.info-group {
+    flex: 1 1 calc(33.333% - 20px); /* Três colunas com espaço entre elas */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.info-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info-group div {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    line-height: 1.5;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .info-group {
+        flex-basis: calc(50% - 20px); /* Duas colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-group {
+        flex-basis: 100%; /* Uma coluna em telas muito pequenas */
+    }
+}
