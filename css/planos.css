@@ -1,0 +1,44 @@
+.card {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 400px;
+    width: 100%;
+    background-color: #ededed;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: solid 0.5px black;
+  }
+
+  .card-header {
+    background-color: #ea8b17;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .benefits {
+    margin-bottom: 20px;
+  }
+
+  .benefits h3 {
+    color: #333;
+  }
+
+  .subscribe-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #080808;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
