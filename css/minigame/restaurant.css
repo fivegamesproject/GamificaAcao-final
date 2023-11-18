@@ -76,32 +76,6 @@ header {
   color: rgba(255,255,255,.5);
 }
 
-.logo {
-  cursor: default;
-  transform: scale(.2);
-  position: absolute;
-  top: 12px;
-  left: 10px;
-  color: rgba(255,255,255,.4);
-}
-
-.logo circulo_vermelho {
-  z-index: 500;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  opacity: .5;
-  /* transition: all opacity .1s ease-out; */
-}
-
-.logo:hover circulo_vermelho {
-  opacity: .75;
-  transform-origin: bottom;
-  /* animation: strobeStart .5s ease-out, strobe 1s infinite;
-  animation-delay: 0s, .5s; */
-
-}
 
 .table-wrapper {
   margin-top: 10px;
