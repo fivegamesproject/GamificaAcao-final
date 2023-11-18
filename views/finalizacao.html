@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="/css/finalizacao.css">
 </head>
 <body>
+
+    <div id="header-placeholder"></div>
+
     <canvas id="canvas"></canvas>
 
     <div id="modal-background"></div>
@@ -16,6 +19,16 @@
         <p>Seus dados foram enviados para a empresa, enquanto isso, navegue normalmente.</p>
     </div>
 
+    <script>
+        fetch('/views/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o cabeçalho:', error));
+    </script>
+
     <script src="/js/finalizacao.js"></script>
+    
 </body>
 </html>
