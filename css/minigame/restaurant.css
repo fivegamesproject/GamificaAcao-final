@@ -7,7 +7,6 @@
 html,body {
   margin: 0;
   padding: 0;
-  overflow-y: hidden;
 }
 
 body {
@@ -27,6 +26,10 @@ header {
   padding: 12px 15px 11px 35px;
   color: rgba(255,255,255,.3);
   text-align: left;
+}
+
+.minigame-wrapper{
+  display: flex;
 }
 
 .share-menu {
@@ -925,17 +928,14 @@ circulo_vermelho bola_ciano:nth-last-child(4)
   width: calc(100% - 375px);
   text-align: center;
   overflow-x: visible;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
+  position: relative;
+
 }
 
 /**::-webkit-scrollbar { width: 0 !important }*/
 
 .right-col {
-  position: fixed;
+  position: relative;
   width: 375px;
   right: 0;
 /*  overflow: auto;*/
@@ -943,7 +943,6 @@ circulo_vermelho bola_ciano:nth-last-child(4)
   top: 0;
   bottom: 0;
   background: #221e18;
-  z-index: 1;
 }
 
 .level-menu {

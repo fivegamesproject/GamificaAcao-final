@@ -1,21 +1,108 @@
-body {
+body{
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    border-style: box;
+  
 }
 
-.search-container {
-    text-align: center;
-    margin: 20px;
-}
-
-#searchInput {
-    padding: 10px;
-    width: 200px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.container-vaga{
+.vaga-interna{
+    margin: 0 auto;
+    margin-top: 50px;
     padding: 20px;
-    border: solid 1px rgb(99, 99, 99);
+    border: solid 1px rgb(114, 114, 114);
+    border-radius: 10px;
+    width: 800px;
+    background-color: #ededed;
+}
+
+.nivel-da-vaga{
+    border: 1px solid #000000;
+    color: #000000;
+    background-color: #fff;
+    width: 105px;
+    height: 30px;
+    padding: 1.2px;
+    line-height: 5px;
+    font-size: .725rem;
+}
+
+.função{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.info-gerais{
+}
+
+.endereco-empresa{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    font-weight: 700;
+}
+
+.salario{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    font-weight: 700;
+}
+
+.tipo-de-vaga{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tipo-de-vaga img{
+    width: 20px;
+    height: 20px;
+}
+
+.exigencias ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.candidatar button{
+    background-color: #ea8b17;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 12pt;
+    border-color: #ea8b17;   
+}
+
+.candidatar{
+    padding-top: 20px;
+}
+
+.botoes-adicionais{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.sobre button{
+    background-color: #ea8b17;
+    width: 80px;
+    height: 30px;
+    border-radius: 9px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 10pt;
+    border-color: #ea8b17;   
+}
+
+.empresa button{
+    background-color: #ea8b17;
+    width: 80px;
+    height: 30px;
+    border-radius: 9px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 10pt;
+    border-color: #ea8b17;  
 }

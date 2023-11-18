@@ -3,66 +3,106 @@
 <head>
     <title>Perfil</title>
     <link rel="stylesheet" type="text/css" href="/css/perfil.css">
+    <link rel="stylesheet" href="/css/header.css">
 </head>
 <body>
+    
+    <header class="site-header">
+        <div class="logo">
+            <img src="/images/gamefica.png" alt="Logo do Site">      
+        </div>
+        
+        <nav class="menu">
+            <ul>
+                <li><a href="/views/dashboard.html">Vagas</a></li>
+                
+            </ul>  
+        </nav>
+        
+        <div class="usuario">
+            <div id="login-button">
+                <img src="/images/usuario.png" alt="usuario">
+                <span>Diego </span>
+                
+                <div class="nivel">
+                    <img id="img-nivel" src="/images/subir-de-nivel.png" alt="nivel">
+                    <p>10</p>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="custom-progress">
+                    <span class="progress-label">56%</span>
+                </div>
+                <span class="remaining-progress">34%</span>
+            </div>
+        </div>
+        
+        
+    </header>
+    <div class="header-bar"> </div>
+    
     <div class="header">
         <h1>Perfil do Usuário</h1>
     </div>
-
+    
     <div class="perfil-container">
         <h2 class="perfil-title">Perfil</h2>
-
+        
         <div class="info-group">
             <label>Nome:</label>
             <div id="nome">Carregando...</div>
         </div>
-
+        
         <div class="info-group">
             <label>CPF:</label>
             <div id="cpf">Carregando...</div>
         </div>
-
+        
         <div class="info-group">
             <label>Email:</label>
             <div id="email">Carregando...</div>
         </div>
-
+        
         <div class="info-group">
             <label>Data de Nascimento:</label>
             <div id="dataNascimento">Carregando...</div>
         </div>
-
+        
         <div class="info-group">
             <label>Sexo:</label>
             <div id="sexo">Carregando...</div>
         </div>
-
+        
         <div class="info-group">
             <label>Cidade:</label>
             <div id="cidade">Carregando...</div>
         </div>
-
+        
         <div class="info-group">
             <label>Estado:</label>
             <div id="estado">Carregando...</div>
         </div>
-
+        
         <div class="info-group">
             <label>Senha:</label>
             <div id="senha">********</div>
         </div>
-
+        
         <div class="info-group">
             <label>Confirmar Senha:</label>
             <div id="confirmarSenha">********</div>
         </div>
-
+        
         <div class="info-group">
             <label>Currículo:</label>
             <div id="curriculo">Carregando...</div>
         </div>
-
+        
     </div>
+
+
+    <script src="/js/header.js"></script>
     <script src="/js/perfil.js"></script>
 </body>
 </html>

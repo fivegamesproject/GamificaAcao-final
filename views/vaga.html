@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header </title>
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/dashboard.css">
     <link rel="stylesheet" href="/css/vaga.css">
-    <script src="/js/header.js"></script>
-    <script src="/js/vaga.js"></script>
-
+    <link rel="stylesheet" href="/css/header.css">
 </head>
 <body>
 
@@ -20,7 +16,7 @@
 
         <nav class="menu">
             <ul>
-                <li><a href="/views/vaga.html">Vagas</a></li>
+                <li><a href="/views/dashboard.html">Vagas</a></li>
                 
             </ul>  
         </nav>
@@ -37,10 +33,12 @@
             </div>
             
             <div class="progress-container">
-                <div class="progress-bar" id="custom-progress">
-                    <span class="progress-label">56%</span>
+                <div class="progress-container">
+                    <div class="progress-bar" id="custom-progress">
+                        <span class="progress-label">56%</span>
+                    </div>
+                    <span class="remaining-progress">34%</span>
                 </div>
-                <span class="remaining-progress">34%</span>
             </div>
         </div>
        
@@ -49,19 +47,8 @@
     <div class="header-bar"> </div>
 <!-- Fim do Header  ----------------------------------------- -->
     
-
-
-<!-- 
------------------------------------------- -->
-
 <div class="vaga-interna">
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Digite a vaga desejada...">
-    </div>
-    
-    <h1>Vagas disponiveis:</h2>
-    
-    <div class="container-vaga">
+        
         <div class="nivel-da-vaga">
             <p>contratação urgente</p>
         </div>
@@ -70,7 +57,6 @@
             <div class="função">
                 <p>Desenvolvedor Front-end</p>
             </div>
-
             <div class="nome-empresa">
                 <p>Empresa: GameficaAção</p>
             </div>
@@ -86,29 +72,55 @@
             <div class="tipo-de-vaga">
                 <span> <img src="/images/predio-comercial.png" ></span> <p>  Presencial</p>
             </div>  
+        </div>
+
+        
+
+        <div class="exigencias">
+           <p> Exigências: </p>
+           <ul>
+                <li>HTML 5</li>    
+                <li>CSS</li>
+                <li>Escolaridade Mínima: Ensino Médio Completo</li>
+           </ul>
+        </div>
+
+        <div class="informacoes-adicionais-empresa">
+            <p><strong>Setor</strong></style>: Tecnologia da informação</p>
+            <p><strong>Nossa historia: </strong>Fundada em 2023, a GameficaAção nasceu da paixão por inovação e diversão. Nossos fundadores, Diego, Leandro e Leonardo, percebem que o potencial humano poderia ser maximizado quando as tarefas diárias eram encaradas como missões épicas.</p>
+            <p><strong>Matriz:</strong> São Paulo</p>
+            <p><strong>Funcionarios:</strong> 3</p>
+        </div>
+
+        <div class="informacoes-adicionais">
+            <p><strong>Vaga:</strong> Desenvolvedor Front-end</p>
+
+            <p><strong>Atividades:</strong> transformar o design e os conceitos fornecidos pelos designers em códigos de alta qualidade, garantindo uma experiência do usuário excepcional. Isso envolve a implementação de layouts responsivos, animações, e a integração de elementos gráficos, garantindo que a aplicação seja esteticamente agradável e funcione perfeitamente em diferentes dispositivos e navegadores.</p>
+            
+            <p> <strong>Remuneração:</strong>  R$ 1.650,00 a R$ 1.680,00 (Bruto mensal), Bônus pós experiência 250,00 + Assiduidade 80,00 </p>
+
+            <p><strong>Local de trabalho:</strong> Centro - SP</p>
+
+            <p><strong>Horário de trabalho:</strong> 6hrs diárias; Escala 6x1</p>
+            
+            <p><strong>Número de vagas:</strong> 1</p>
+
+            <p><strong>Tipo de contrato e Jornada:</strong> Efetivo – CLT - Parcial noites</p>
+
+            <p><strong>Área Profissional:</strong> Assistente em Alimentação / Gastronomia - Lanchonete, Fast Food, Cafeteria</p>
+
+        </div>
+
+        
+
+        <div class="candidatar">
+            <button><a href="/views/questionario.html">Candidatar-me</a></button>
+        </div>
 
 
-            <div class="exigencias">
-            <p> Descrição da Vaga: </p>
-            Estamos em busca de um(a) talentoso(a) Desenvolvedor(a) Front-end para se juntar à nossa equipe de tecnologia. Se você está apaixonado por criar interfaces intuitivas e visualmente atraentes, além de ter habilidades sólidas em HTML e CSS, este pode ser o papel perfeito para você.
-
-            </div>
-
-            <div class="candidatar">
-                <button><a href="dashboard.html" target="_blank">Saiba mais</a></button>
-            </div>
-        </div>   
     </div>
-    
 
+    <script src="/js/header.js"></script>
+    <script src="/js/vaga.js"></script>
     </body>
 </html>
-
-
-
-
-
-
-  
-
-
