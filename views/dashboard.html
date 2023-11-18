@@ -7,101 +7,139 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/dashboard.css">
     <link rel="stylesheet" href="/css/vaga.css">
+    <link rel="stylesheet" href="/css/footer.css">
 
 
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="logo">
-            <img src="/images/gamefica.png" alt="Logo do Site">      
-        </div>
+        <header class="site-header">
+            <div class="logo">
+                <img src="/images/gamefica.png" alt="Logo do Site">      
+            </div>
 
-        <nav class="menu">
-            <ul>
-                <li><a href="/views/dashboard.html">Vagas</a></li>
+            <nav class="menu">
+                <ul>
+                    <li><a href="/views/dashboard.html">Vagas</a></li>
+                    
+                </ul>  
+            </nav>
+
+            <div class="usuario">
+                <div id="login-button">
+                    <img src="/images/usuario.png" alt="usuario">
+                        <span>Diego </span>
+
+                    <div class="nivel">
+                        <img id="img-nivel" src="/images/subir-de-nivel.png" alt="nivel">
+                        <p>10</p>
+                    </div>
+                </div>
                 
-            </ul>  
-        </nav>
-
-        <div class="usuario">
-            <div id="login-button">
-                <img src="/images/usuario.png" alt="usuario">
-                    <span>Diego </span>
-
-                <div class="nivel">
-                    <img id="img-nivel" src="/images/subir-de-nivel.png" alt="nivel">
-                    <p>10</p>
+                <div class="progress-container">
+                    <div class="progress-bar" id="custom-progress">
+                        <span class="progress-label">56%</span>
+                    </div>
+                    <span class="remaining-progress">34%</span>
                 </div>
             </div>
-            
-            <div class="progress-container">
-                <div class="progress-bar" id="custom-progress">
-                    <span class="progress-label">56%</span>
-                </div>
-                <span class="remaining-progress">34%</span>
-            </div>
-        </div>
-       
         
-    </header>
-    <div class="header-bar"> </div>
-<!-- Fim do Header  ----------------------------------------- -->
-    
+            
+        </header>
+
+            <div class="header-bar"> </div>
+    <!-- Fim do Header  ----------------------------------------- -->
+        
 
 
-<!-- 
------------------------------------------- -->
+    <!-- 
+    ------------------------------------------ -->
 
-<div class="vaga-interna">
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Digite a vaga desejada...">
-    </div>
-    
-    <h1>Vagas disponiveis:</h2>
-    
-    <div class="container-vaga">
-        <div class="nivel-da-vaga">
-            <p>contratação urgente</p>
+        <div class="vaga-interna">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Digite a vaga desejada...">
+            </div>
+            
+            <h1>Vagas disponiveis:</h2>
+            
+            <div class="container-vaga">
+                
+                <div class="nivel-da-vaga">
+                    <p>contratação urgente</p>
+                </div>
+
+                <div class="info-gerais">
+                    <div class="função">
+                        <p>Desenvolvedor Front-end</p>
+                    </div>
+
+                    <div class="nome-empresa">
+                        <p>Empresa: GameficaAção</p>
+                    </div>
+
+                    <div class="endereco-empresa">
+                        <p>Sao Paulo - SP</p>
+                    </div>
+                    
+                    <div class="salario">
+                        R$ 1.650,00 a R$ 1.680,00 (Bruto mensal)
+                    </div>
+                    
+                    <div class="tipo-de-vaga">
+                        <span> <img src="/images/predio-comercial.png" ></span> <p>  Presencial</p>
+                    </div>  
+
+
+                    <div class="exigencias">
+                        <p> Descrição da Vaga: </p>
+                        <p>Estamos em busca de um(a) talentoso(a) Desenvolvedor(a) Front-end para se juntar à nossa equipe de tecnologia. Se você está apaixonado por criar interfaces intuitivas e visualmente atraentes, além de ter habilidades sólidas em HTML e CSS, este pode ser o papel perfeito para você.</p>
+                    </div>
+
+                    <div class="candidatar">
+                        <button><a href="vaga.html">Saiba mais</a></button>
+                    </div>
+                </div>   
+            </div>
+
         </div>
 
-        <div class="info-gerais">
-            <div class="função">
-                <p>Desenvolvedor Front-end</p>
-            </div>
+        <footer class="site-footer">
 
-            <div class="nome-empresa">
-                <p>Empresa: GameficaAção</p>
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="/images/gamefica.png" alt="Logo do Site">      
+                </div>
+        
+                <nav class="footer-processos">
+                    <ul>
+                        <h3>Processos seletivos:</h3>
+                        <li><a href="/views/vaga.html">Vagas</a></li>
+                        <li><a href="/views/dashboard.html">Vaga interna</a></li> 
+                        <li><a href="/views/minhas-vagas.html">Minhas Vagas</a></li>
+                    </ul>  
+                </nav>
+            
+                <div class="footer-usuario">
+                    
+                    <ul>
+                        <h3>Usuario:</h3> 
+                        <li><a href="/index.html">Home</a></li> 
+                        <li><a href="/views/perfil.html">Perfil</a></li>
+                        <li><a href="/views/planos.html">Planos</a></li> 
+                    </ul>  
+                </div>
             </div>
+        </footer>
 
-            <div class="endereco-empresa">
-                <p>Sao Paulo - SP</p>
+            <div class="copyright">
+                &copy; 2023 GamificaAção. Todos os direitos reservados.
             </div>
             
-            <div class="salario">
-                R$ 1.650,00 a R$ 1.680,00 (Bruto mensal)
-            </div>
-            
-            <div class="tipo-de-vaga">
-                <span> <img src="/images/predio-comercial.png" ></span> <p>  Presencial</p>
-            </div>  
+            <script src="/js/header.js"></script>
+            <script src="/js/dashboard.js"></script>
 
-
-            <div class="exigencias">
-            <p> Descrição da Vaga: </p>
-            Estamos em busca de um(a) talentoso(a) Desenvolvedor(a) Front-end para se juntar à nossa equipe de tecnologia. Se você está apaixonado por criar interfaces intuitivas e visualmente atraentes, além de ter habilidades sólidas em HTML e CSS, este pode ser o papel perfeito para você.
-
-            </div>
-
-            <div class="candidatar">
-                <button><a href="vaga.html">Saiba mais</a></button>
-            </div>
-        </div>   
-    </div>
-    
-    <script src="/js/header.js"></script>
-    <script src="/js/dashboard.js"></script>
-    </body>
+   
+    </body>     
 </html>
 
 
