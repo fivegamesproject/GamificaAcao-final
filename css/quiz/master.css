@@ -5,16 +5,23 @@ html {
     background: #eee;
 }
 
-body {
+.quizWrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#slickQuiz {
     width: 800px;
     margin: 0 auto;
     border: 2px solid #ccc;
-    border-top: none;
     background: #fff;
     padding: 20px;
     font-family: Trebuchet, Arial,Helvetica,sans-serif;
     font-size: 16px;
-    color: #353535;
+    color: #000000;
     line-height: 1.5em;
 }
 
@@ -23,7 +30,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: bold;}
 h1 {
     font-size: 26px;
     margin: 0 0 20px;
-    color: #0C4569;
+    color: #ea8b17;
 }
 h2 {
     font-size: 22px;
@@ -57,7 +64,7 @@ ol li { list-style-type: decimal; margin-left: 20px; }
     width: auto;
     padding: 5px 15px;
     color:#ffffff;
-    background-color:darkcyan;
+    background-color:#ea8b17;
     border: 1px solid #fff;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -65,7 +72,7 @@ ol li { list-style-type: decimal; margin-left: 20px; }
 	text-decoration: none;
 }
 .button:hover {
-    background-color:darkslategray;
+    background-color:#da8116;
 }
 
 .startQuiz {

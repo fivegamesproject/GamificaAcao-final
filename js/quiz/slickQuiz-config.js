@@ -1,72 +1,157 @@
-// Setup your quiz text and questions here
+//Setup your quiz text and questions here
 
-// NOTE: pay attention to commas, IE struggles with those bad boys
+//NOTE: pay attention to commas, IE struggles with those bad boys
 
 var quizJSON = {
     "info": {
-        "name":    "Test Your Knowledge!!",
-        "main":    "<p>Think you're smart enough to be on Jeopardy? Find out with this super crazy knowledge quiz!</p>",
-        "results": "<h5>Learn More</h5><p>Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>",
-        "level1":  "Jeopardy Ready",
-        "level2":  "Jeopardy Contender",
-        "level3":  "Jeopardy Amateur",
-        "level4":  "Jeopardy Newb",
-        "level5":  "Stay in school, kid..." // no comma here
+        "name":    "Nome do Quiz",
+        "main":    "<p>Ao responder não poderá voltar na questão, só conseguirá ir para a próxima questão se responder a atual</p>",
+        "results": "Siga para a  <a href='/views/minigame.html'>próxima etapa!</a>",
     },
     "questions": [
-        { // Question 1 - Multiple Choice, Single True Answer
-            "q": "What number is the letter A in the English alphabet?",
+        { 
+            "q": "Se todos os veículos são azuis e algum azul é um carro, então algum veículo é um carro?",
             "a": [
-                {"option": "8",      "correct": false},
-                {"option": "14",     "correct": false},
-                {"option": "1",      "correct": true},
-                {"option": "23",     "correct": false} // no comma here
+                {"option": "Sim",      "correct": true},
+                {"option": "Não",     "correct": false}
             ],
-            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
-            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
         },
-        { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "q": "Which of the following best represents your preferred breakfast?",
+        { 
+            "q": "Se x + 2 = 5, qual é o valor de x?",
             "a": [
-                {"option": "Bacon and eggs",               "correct": false},
-                {"option": "Fruit, oatmeal, and yogurt",   "correct": true},
-                {"option": "Leftover pizza",               "correct": false},
-                {"option": "Eggs, fruit, toast, and milk", "correct": true} // no comma here
+                {"option": "2",      "correct": false},
+                {"option": "3",     "correct": true},
+                {"option": "7",      "correct": false},
+                {"option": "5",     "correct": false}
             ],
-            "select_any": true,
-            "correct": "<p><span>Nice!</span> Your cholestoral level is probably doing alright.</p>",
-            "incorrect": "<p><span>Hmmm.</span> You might want to reconsider your options.</p>" // no comma here
+
         },
-        { // Question 3 - Multiple Choice, Multiple True Answers, Select All
-            "q": "Where are you right now? Select ALL that apply.",
+        {
+            "q": "Qual é a média de uma série de números onde a soma é 150 e há 6 números na série?",
             "a": [
-                {"option": "Planet Earth",           "correct": true},
-                {"option": "Pluto",                  "correct": false},
-                {"option": "At a computing device",  "correct": true},
-                {"option": "The Milky Way",          "correct": true} // no comma here
+                {"option": "25",      "correct": true},
+                {"option": "30",     "correct": false},
+                {"option": "24",      "correct": false},
+                {"option": "28",     "correct": false}
             ],
-            "correct": "<p><span>Brilliant!</span> You're seriously a genius, (wo)man.</p>",
-            "incorrect": "<p><span>Not Quite.</span> You're actually on Planet Earth, in The Milky Way, At a computer. But nice try.</p>" // no comma here
         },
-        { // Question 4
-            "q": "How many inches of rain does Michigan get on average per year?",
+        {
+            "q": "Qual é o produto de 6 por 7?",
             "a": [
-                {"option": "149",    "correct": false},
-                {"option": "32",     "correct": true},
-                {"option": "3",      "correct": false},
-                {"option": "1291",   "correct": false} // no comma here
+                {"option": "42",      "correct": true},
+                {"option": "48",     "correct": false},
+                {"option": "36",      "correct": false},
+                {"option": "54",     "correct": false}
             ],
-            "correct": "<p><span>Holy bananas!</span> I didn't actually expect you to know that! Correct!</p>",
-            "incorrect": "<p><span>Fail.</span> Sorry. You lose. It actually rains approximately 32 inches a year in Michigan.</p>" // no comma here
         },
-        { // Question 5
-            "q": "Is Earth bigger than a basketball?",
+        {
+            "q": "Qual é a área de um círculo com raio de 4cm? (Use π = 3,14)",
             "a": [
-                {"option": "Yes",    "correct": true},
-                {"option": "No",     "correct": false} // no comma here
+                {"option": "50,24 cm²",      "correct": true},
+                {"option": "12,56 cm²",     "correct": false},
+                {"option": "25,12 cm²",      "correct": false},
+                {"option": "16 cm²",     "correct": false}
             ],
-            "correct": "<p><span>Good Job!</span> You must be very observant!</p>",
-            "incorrect": "<p><span>ERRRR!</span> What planet Earth are <em>you</em> living on?!?</p>" // no comma here
-        } // no comma here
+        },
+        {
+            "q": "Qual palavra está escrita incorretamente?",
+            "a": [
+                {"option": "Excessão",      "correct": true},
+                {"option": "Exceção",     "correct": false},
+                {"option": "Ascenção",      "correct": false},
+                {"option": "Descenso",     "correct": false}
+            ],
+
+        },
+        {
+            "q": "Em um texto sobre economia, a palavra 'inflação' sugere:",
+            "a": [
+                {"option": "Crescimento econômico",      "correct": false},
+                {"option": "Decréscimo nos preços",     "correct": false},
+                {"option": "Aumento generalizado dos preços",      "correct": true},
+                {"option": "Estabilidade financeira",     "correct": false}
+            ],
+
+        },
+        {
+            "q": "Qual figura de linguagem está presente em 'O céu chora suas mágoas'?",
+            "a": [
+                {"option": "Metáfora",      "correct": false},
+                {"option": "Prosopopeia",     "correct": true},
+                {"option": "Onomatopeia",      "correct": false},
+                {"option": "Hipérbole",     "correct": false}
+            ],
+        },
+        {
+            "q": "Qual é a forma correta de pluralizar a palavra 'mal'?",
+            "a": [
+                {"option": "Maus",      "correct": false},
+                {"option": "Mals",     "correct": false},
+                {"option": "Mais",      "correct": false},
+                {"option": "Males",     "correct": true}
+            ],
+        },
+        {
+            "q": "Qual é o sinônimo de 'rápido'?",
+            "a": [
+                {"option": "Lento",      "correct": false},
+                {"option": "Veloz",     "correct": true},
+                {"option": "Devagar",      "correct": false},
+                {"option": "Moroso",     "correct": false}
+            ],
+
+        },
+        {
+            "q": "O que significa 'apple' em português?",
+            "a": [
+                {"option": "Banana",      "correct": false},
+                {"option": "Maçã",     "correct": true},
+                {"option": "Pera",      "correct": false},
+                {"option": "Uva",     "correct": false}
+            ],
+
+        },
+        {
+            "q": "Qual é o passado de 'go'?",
+            "a": [
+                {"option": "Gone",      "correct": false},
+                {"option": "Went",     "correct": true},
+                {"option": "Goed",      "correct": false},
+                {"option": "Goes",     "correct": false}
+            ],
+
+        },
+        {
+            "q": "Se 'John can play the guitar', o que John é capaz de fazer?",
+            "a": [
+                {"option": "Cantar",      "correct": false},
+                {"option": "Dançar",     "correct": false},
+                {"option": "Tocar guitarra",      "correct": true},
+                {"option": "Jogar futebol",     "correct": false}
+            ],
+
+        },
+        {
+            "q": "O que significa 'look up to'?",
+            "a": [
+                {"option": "Admirar",      "correct": true},
+                {"option": "Procurar",     "correct": false},
+                {"option": "Subir",      "correct": false},
+                {"option": "Olhar para cima",     "correct": false}
+            ],
+
+        },
+        {
+            "q": "Como se diz 'obrigado' em inglês?",
+            "a": [
+                {"option": "Hello",      "correct": false},
+                {"option": "Please",     "correct": false},
+                {"option": "Thank you",   "correct": true},
+                {"option": "Goodbye",     "correct": false}
+            ],
+
+        },
     ]
+
+    
 };

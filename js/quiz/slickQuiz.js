@@ -1,15 +1,3 @@
-/*!
- * SlickQuiz jQuery Plugin
- * http://github.com/jewlofthelotus/SlickQuiz
- *
- * @updated October 25, 2014
- * @version 1.5.20
- *
- * @author Julie Cameron - http://www.juliecameron.com
- * @copyright (c) 2013 Quicken Loans - http://www.quickenloans.com
- * @license MIT
- */
-
 (function($){
     $.slickQuiz = function(element, options) {
         var plugin   = this,
@@ -17,13 +5,13 @@
             _element = '#' + $element.attr('id'),
 
             defaults = {
-                checkAnswerText:  'Check My Answer!',
-                nextQuestionText: 'Next &raquo;',
+                checkAnswerText:  'Checar resposta',
+                nextQuestionText: 'Próxima questão',
                 backButtonText: '',
-                completeQuizText: '',
+                completeQuizText: 'Finalizar questionário',
                 tryAgainText: '',
-                questionCountText: 'Question %current of %total',
-                preventUnansweredText: 'You must select at least one answer.',
+                questionCountText: 'Questão %current de %total',
+                preventUnansweredText: 'Você deve selecionar pelo menos 1 questão',
                 questionTemplateText:  '%count. %text',
                 scoreTemplateText: '%score / %total',
                 nameTemplateText:  '<span>Quiz: </span>%name',
