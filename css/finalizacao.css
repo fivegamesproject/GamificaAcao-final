@@ -32,3 +32,8 @@ canvas {
     z-index: 3; /* O mais alto, acima do canvas e do fundo do modal */
     display: none;
 }
+
+.site-header {
+    z-index: 1000; /* Valor alto para garantir que fique no topo */
+    position: relative; /* z-index só funciona em elementos posicionados (não static) */
+}

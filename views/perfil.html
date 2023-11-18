@@ -5,9 +5,8 @@
     <link rel="stylesheet" type="text/css" href="/css/perfil.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Perfil do Usuário</h1>
-    </div>
+
+    <div id="header-placeholder"></div>
 
     <div class="perfil-container">
         <h2 class="perfil-title">Perfil</h2>
@@ -63,6 +62,16 @@
         </div>
 
     </div>
+
+    <script>
+        fetch('/views/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o cabeçalho:', error));
+    </script>
+
     <script src="/js/perfil.js"></script>
 </body>
 </html>

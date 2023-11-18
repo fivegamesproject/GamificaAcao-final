@@ -1,12 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ededed; /* Cor de fundo */
+    background: linear-gradient(to bottom, #ea8b17, #ffffff); /* Degradê do laranja para o branco */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
+
 
 .cadastro-container, .login-container {
     background: #fff;
