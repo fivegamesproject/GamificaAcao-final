@@ -1,11 +1,27 @@
 body {
+    padding: 0;
+    margin: 0;
+}
+
+#content-wrapper {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #ea8b17, #ffffff); /* Degradê do laranja para o branco */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+  
+    padding: 20px 0;
+}
+
+#cadastroForm{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+
 }
 
 
