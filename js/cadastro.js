@@ -12,3 +12,6 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
         alert("As senhas não coincidem. Por favor, tente novamente.");
     }
 });
+
+// -----------------------------------------------------------------------------------------------
+// cadastro.js

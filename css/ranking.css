@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+}
+table {
+    margin: 0 auto;
+    width: 50%;
+    border-collapse: collapse;
+   
+}
+
+.titulo-ranking{
+  text-align: center;
+  margin:30px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.altura{
+    margin-bottom: 372px;
+}
