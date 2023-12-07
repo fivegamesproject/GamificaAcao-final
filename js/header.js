@@ -1,44 +1,73 @@
+function acumularXP(faseXP) {
+    xpAcumulado += faseXP;
 
-var username = localStorage.getItem("username");
-var level = localStorage.getItem("level");
-var actual_xp = localStorage.getItem("actual_xp");
-var target_xp = localStorage.getItem("target_xp");
+    if (xpAcumulado >= xpMeta) {
+        subirNivel();
+        xpAcumulado = 0; 
+    }
 
-const progressBar = document.getElementById('custom-progress');
-const remainingProgress = document.querySelector('.remaining-progress');
-const usernameLabel = document.querySelector('.username');
-const levelLabel = document.querySelector('.level');
-
-if(username == 'undefined' || username == null){
-    localStorage.setItem("username", "Diego");
-    usernameLabel.textContent = username
+    salvarXPNoLocalStorage();
 }
 
-if(level == 'undefined' || level == null){
-    localStorage.setItem("level", 1);
-    levelLabel.textContent = level
+function subirNivel() {
+    nivel++;
+    xpMeta = calcularNovaMeta();
+    salvarNivelNoLocalStorage();
+    atualizarBarraXP();
 }
 
-if(actual_xp == 'undefined' || actual_xp == null){
-    localStorage.setItem("actual_xp", 0); 
+function calcularNovaMeta() {
+    return parseInt(xpMeta * 2);
+  }
+  
+function atualizarBarraXP() {
+    const xpProgresso  = document.querySelector('.actual-progress');
+    const xpTexto  = document.querySelector('.progress-label');
+    const xpMetaLabel  = document.querySelector('#xpMeta');
 
-    let progressValue = localStorage.getItem("actual_xp");
-    progressBar.style.width = `${progressValue}%`;
-    remainingProgress.textContent = `${progressValue}%`;
+
+    const level  = document.querySelector('.level');
+
+
+    const porcentagemXP = (xpAcumulado / xpMeta) * 100;
+    xpProgresso.style.width = `${porcentagemXP}%`;
+
+    xpMetaLabel.textContent = `${xpMeta} xp`;
+
+    level.textContent = nivel;
+    xpTexto.textContent = `${xpAcumulado}%`;
 }
 
-if(target_xp == 'undefined' || target_xp == null){           
-    localStorage.setItem("target_xp", 100);    
+function salvarXPNoLocalStorage() {
+    localStorage.setItem('xpAcumulado', xpAcumulado);
+}
+
+function salvarNivelNoLocalStorage(){
+    localStorage.setItem('nivel', nivel);
+}
+
+function adicionarXPAcumulado() {
+    atualizarBarraXP();
+}
+
+function carregarXPDoLocalStorage() {
+    const xpArmazenado = localStorage.getItem('xpAcumulado');
+    xpAcumulado = xpArmazenado ? parseInt(xpArmazenado, 10) : 0;
+}
+function definirXPInicial() {
+    xpMeta = 5;
+    xpMeta = calcularNovaMeta();
+}
+
+function inicializar() {
+    carregarXPDoLocalStorage();
+    atualizarBarraXP();
 }
 
 
-window.addEventListener("localDataStorage", function () {
-    console.log("oi")
-}, false);
 
-
-
-
-
-
+let xpAcumulado = 0;
+let nivel = 1;
+definirXPInicial();
+inicializar();
 

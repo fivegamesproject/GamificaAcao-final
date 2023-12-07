@@ -456,6 +456,7 @@ function updateProgressUI(levelNumber, completed){
   if(completed) {
     $(".levels a:nth-child("+ (levelNumber+1) + ")").addClass("completed");
     $(".level-header").addClass("completed");
+    acumularXP(4)
   } else {
     $(".level-header").removeClass("completed");
   }
@@ -513,7 +514,7 @@ function sendEvent(category, action, label){
 }
 
 function winGame(){
-  $(".retangulo").html('<span class="winner"><strong>You did it!</strong><br>You rock at CSS.</span>');
+  $(".retangulo").html('<span class="winner"><strong>Vpcê conseguiu!</strong><br>Agora vá para <a onclick="adicionarXPAcumulado" href="/views/finalizacao.html">próxima etapa</a>.</span>');
   addNametags();
   finished = true;
   resetTable();

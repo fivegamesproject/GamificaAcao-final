@@ -84,6 +84,7 @@
 .xp{
     font-size: 14px;
     font-weight: 600;
+    color: black;
 }
 /* Barra de progresso */
 .progress-container {
@@ -96,29 +97,22 @@
     position: relative;
 }
 
-.progress-bar {
-    height: 100%;
-    background-color: #ea8b17;
-    border-radius: 10px;
-    transition: width 0.3s ease;
-    position: relative;
-}
-
 .progress-label {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: #000000;
+    font-weight: 600;
+    z-index: 1;
 }
 
-.remaining-progress {
-    font-weight: bold;
-    color: black;
+.actual-progress{
+    background-color: #ea8b17;
+    width: 0%;
+    transition: width 0.3s ease;
     position: absolute;
-    transform: translateX(50%);
-    width: 100%;
-    z-index: 1;
+    height: 100%;
 }
 
 .header-bar {

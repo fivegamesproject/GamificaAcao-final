@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <div id="header-placeholder"></div>
+    <div id="header"></div>
 
     <canvas id="canvas"></canvas>
 
@@ -21,25 +21,17 @@
     </div>
 
     
-
-    
-
-    <script>
-        fetch('/views/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Erro ao carregar o cabeçalho:', error));
-    </script>
-
-
-
-    <script src="/js/finalizacao.js"></script>
-
-
     </div> 
     
+        
+        <script src="../js/modules/jquery.js"></script>
+        <script>
+            $(function(){
+                $("#header").load("header.html"); 
+            });
+        </script>
+        <script src="/js/finalizacao.js"></script>
+
     
 </body>
 </html>

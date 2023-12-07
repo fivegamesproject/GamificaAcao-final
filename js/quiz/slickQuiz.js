@@ -304,7 +304,7 @@
 
                         // If we're not showing responses per question, show next question button and make it check the answer too
                         if (!plugin.config.perQuestionResponseMessaging) {
-                            questionHTML.append('<a href="#" class="button ' + nextQuestionClass + ' ' + checkAnswerClass + '">' + nextText + '</a>');
+                            questionHTML.append('<a href="#"  class="button ' + nextQuestionClass + ' ' + checkAnswerClass + '">' + nextText + '</a>');
                         } else {
                             questionHTML.append('<a href="#" class="button ' + nextQuestionClass + '">' + nextText + '</a>');
                             questionHTML.append('<a href="#" class="button ' + checkAnswerClass + '">' + plugin.config.checkAnswerText + '</a>');
@@ -453,6 +453,7 @@
 
                 if (correctResponse) {
                     questionLI.addClass(correctClass);
+                    acumularXP(1)
                 } else {
                     questionLI.addClass(incorrectClass);
                 }

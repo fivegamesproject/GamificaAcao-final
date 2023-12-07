@@ -4,9 +4,9 @@
 
 var quizJSON = {
     "info": {
-        "name":    "Nome do Quiz",
+        "name":    "Questionário - Conhecimentos Gerais",
         "main":    "<p>Ao responder não poderá voltar na questão, só conseguirá ir para a próxima questão se responder a atual</p>",
-        "results": "Siga para a  <a href='/views/minigame.html'>próxima etapa!</a>",
+        "results": "Siga para a  <a onclick='adicionarXPAcumulado' href='/views/minigame.html'>próxima etapa!</a>",
     },
     "questions": [
         { 
